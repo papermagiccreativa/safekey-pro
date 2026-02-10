@@ -2,70 +2,116 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>SafeKey Pro</title>
+  <title>SafeKey Pro | Llavero Inteligente Antipérdida</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
       margin: 0;
-      padding: 0;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #1e293b, #020617);
+      padding: 40px 20px;
       text-align: center;
     }
-
-    header {
-      background: #1f4fd8;
-      color: white;
-      padding: 30px 20px;
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
-
+    header p {
+      font-size: 1.2em;
+      color: #cbd5f5;
+    }
     section {
-      padding: 30px 20px;
-      max-width: 900px;
+      padding: 40px 20px;
+      max-width: 1000px;
       margin: auto;
     }
-
-    img {
-      max-width: 100%;
-      height: auto;
+    .producto {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+    .producto img {
+      max-width: 320px;
+      width: 100%;
       border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-      margin: 20px 0;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
     }
-
-    .beneficios {
-      text-align: left;
-      margin-top: 30px;
+    .cta {
+      background: #22c55e;
+      color: #052e16;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      display: inline-block;
+      margin-top: 20px;
     }
-
     .beneficios li {
       margin-bottom: 10px;
-      font-size: 18px;
     }
-
     footer {
-      background: #222;
-      color: white;
-      padding: 15px;
-      margin-top: 40px;
+      background: #020617;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #94a3b8;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>SafeKey Pro</h1>
-    <p>La llave inteligente que protege, localiza y simplifica tu día</p>
-  </header>
+<header>
+  <h1>SafeKey Pro</h1>
+  <p>El llavero inteligente que cuida tus llaves, tu tiempo y tu tranquilidad</p>
+</header>
 
-  <section>
-    <h2>Conoce el producto</h2>
-
-    <!-- IMAGEN DEL PRODUCTO -->
-    <img src="images/safekey-pro.png" alt="SafeKey Pro">
+<section class="producto">
+  <div>
+    <h2>¿Por qué SafeKey Pro?</h2>
+    <p>
+      Los llaveros tradicionales no aportan seguridad, hacen ruido, se enredan y son fáciles de perder.
+      SafeKey Pro transforma un objeto cotidiano en una herramienta inteligente, segura y multifuncional.
+    </p>
 
     <ul class="beneficios">
-      <li>🔐 Sist
-<!-- redeploy -->
+      <li>📍 Localizador Bluetooth / GPS</li>
+      <li>🔦 Linterna LED integrada</li>
+      <li>🧲 Sistema magnético seguro (sin anillas)</li>
+      <li>🔇 Mecanismo interno anti-ruido</li>
+      <li>🛠️ Herramientas micro plegables</li>
+      <li>🚨 Alarma de proximidad</li>
+    </ul>
+
+    <p><strong>Precio de lanzamiento:</strong> $899 MXN</p>
+    <a href="#contacto" class="cta">Quiero más información</a>
+  </div>
+
+  <div>
+    <img src="safekey-pro.png" alt="SafeKey Pro">
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Déjanos tus datos</h2>
+  <p>Forma parte de los primeros usuarios de SafeKey Pro.</p>
+
+  <form>
+    <input type="text" placeholder="Nombre" required><br><br>
+    <input type="email" placeholder="Correo electrónico" required><br><br>
+    <button class="cta" type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 SafeKey Pro · Proyecto académico
+</footer>
+
+</body>
+</html>
